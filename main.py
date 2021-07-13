@@ -28,7 +28,7 @@ def guest_message(username):
 
 
 # Payment page
-@app.route('/payment/<float:sal>')
+@app.route('/payment/<int:sal>')
 # if salary > 30000, return balling. If not, redirect to sahomeloan site
 def payment(sal):
     if sal > 30000:
