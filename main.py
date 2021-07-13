@@ -29,7 +29,7 @@ def guest_message(username):
 
 # Payment page
 @app.route('/payment/<float:sal>')
-# if salary > 30000, return balling. If not, redirect to sahomeloan site
+# if salary < 10500.50, redirect to FNB. If not, redirect to sa home loan site
 def payment(sal):
     if sal < 10500.50:
         return redirect('https://www.fnb.co.za/index.html')
